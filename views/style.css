@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #a73656;
+  border-radius: 10px;
+}
+
+.nav{
+    background-color:#fec7d7;
+    display: flex;
+    justify-content: space-around;
+    height: 8vh;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    
+}
+li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.logo{
+    margin-left: 30px;
+    letter-spacing: 2px;
+    font-size: 24px;
+    width: 50%;
+}
+.logo p{
+    color: black;
+    padding: 5px;
+    width: 135px;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 43%;
+    font-size: 17px;
+    font-family: 'Pacifico', cursive;
+    font-family: 'PT Serif', serif;
+}
+.links a{
+    text-decoration: none;
+    color: black;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.one ,.two ,.three{
+    margin: 4px;
+    background-color: black;
+    width: 20px;
+    height: 2px;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.main{
+    background-color:#fec7d7;
+    border-bottom-left-radius:10%;
+    border-bottom-right-radius:10%;
+    color: black;
+    height: 97vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+/* .m22{
+    background-color:#fec7d7;
+    border-top-left-radius:10%;
+    border-top-right-radius:10%;
+    padding-bottom: 30px;
+} */
+
+ .content{
+     width: 50%;
+     color: black;
+ }
+ .btns{
+     margin-top: 10px;
+ }
+ .btns a{
+    text-decoration: none;
+    color: white;
+ }
+ .btns button{
+     cursor: pointer;
+     padding: 10px;
+     border: 1px solid white;
+     background-color: #003566;
+     color: white;
+     border-radius: 5px;
+     padding-left: 20px;
+     padding-right: 20px;
+     font-weight: bold;
+ }
+ 
+ .btns button:hover{
+    transform: scale(1.05);
+    transition: all 0.2s;
+    border: 1px solid #003566;
+ }
+ .links button{
+    cursor: pointer;
+     padding: 8px;
+     border: 1px solid white;
+     color: white;
+     background-color: #003566;
+     border-radius: 5px;
+     padding-left: 20px;
+     padding-right: 20px;
+ }
+ .links span{
+     padding: 5px;
+     background-color: #003566;
+     border-radius: 5px;
+     padding-left: 20px;
+     padding-right: 20px;
+ }
+ .img{
+    width: 40%;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.img img{
+    width: 100%;
+    height: auto;
+}
+.actions{
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    width: 80%;
+    
+}
+.ac1 img{
+    height: 150px;
+    width:150px;
+}
+.ac1{
+    color: #003566;
+    height: 180px;
+    width: 25%;
+    text-align: center;
+}
+.ac1:hover{
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+footer{
+    text-align: center;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0,1);
+    height: 8vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.maincontent{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+}
+.maincontent img{
+    max-height: 300px;
+    max-width: 200px;
+}
+.card img{
+    border-radius: 30px 30px 0px 0px;
+}
+.destinations{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+hr{
+    height: 5px;background-color:#14213d; border: none; width: 25%; margin: auto;  margin-top: 10px;
+}
+#pmain{
+    font-size:30px;
+    font-weight:bold;
+}
+
+@keyframes ex{
+    0%   {background-color:red; left:-15px; top:15px;}
+    25%  {background-color:yellow; left:135px; top:15px;}
+    50%  {background-color:blue; left:135px; top:55px;}
+    75%  {background-color:green; left:-15px; top:55px;}
+    100% {background-color:red; left:-15px; top:15px;}
+}
+@keyframes an{
+    from{
+        transform: translateY(-100%);
+    }to{
+        transform: translateY(0%);
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 750px){
+    .links{
+        width: 98%;
+    }
+}
+
+@media screen and ( max-width:750px) {
+    #big{
+        display: none;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .nav{
+        justify-content:space-between;
+    }
+    .links{
+        display: none;
+        margin-right:10px;
+        /* position: absolute;
+        opacity: 0;
+        pointer-events: none; */
+    }
+    .burger{
+        margin-right:10px;
+    }
+    .actions{
+        flex-direction: column;
+        align-items:center;
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        height: auto;
+    }
+    .ac1{
+        width: 85%;
+        height: auto;
+    }
+    hr{
+        height: 5px;background-color:#14213d; border: none; width: 75%; margin: auto;  margin-top: 10px;
+    }
+    #pmain{
+        font-size:25px;
+    }
+    .ac1 img{
+        height: auto;
+        width: 100%;
+    }
+    .linksshow{
+        display: flex;
+        opacity: 1;
+        pointer-events: auto;
+        width: 100%;
+        position: absolute;
+        flex-direction: column;
+        top: 8vh;
+        height: 30vh;
+        background-color: rgba(0, 0, 0,1);
+        transition: all 0.5s ease-in-out ;
+    }
+    .links a{
+        color: white;
+    }
+    .links button{
+        color: white;
+    }
+    .logo{
+        margin-left: 10px;
+    }
+    .main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: auto;
+        width: 100%;
+        border-radius:0;
+    }
+    .img{
+        justify-content: start;
+        margin-top: 40px;
+        width: 100%;
+        height: 60vh;
+    }
+    .img img{
+        width: 100vw;
+        height: 100%;
+        margin-right: -30px;
+    }
+    .burger{
+        display: block;
+    }
+    .content{
+        width: 97%;
+        text-align: center;
+        margin-top: 70px;
+        /* position: absolute; */
+        /* top: 30%; */
+    }
+}
+
+
+.nav-active{
+    position: absolute;
+    right: 0px;
+    height: 32vh;
+    top: 8vh;
+    background-color: rgba(0, 0, 0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+        /* transform: translateX(100%); */
+        
+}
+
+@keyframes navLinkFade{
+    form{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
